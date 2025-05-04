@@ -1,0 +1,16 @@
+{
+  "name": "n-xtee",
+  "private": true,
+  "scripts": {
+    "start:backend": "npm --prefix backend run dev",
+    "start:frontend": "npm --prefix frontend run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "react-router-dom": "^7.5.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
